@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Works</title>
-  </head>
-  <body>
-    <main>
-      <h1>My Invader</h1>
-      <a href="/">Top</a>
-    </main>
-  </body>
-</html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <canvas id="js-space"></canvas>
+        <canvas id="js-field"></canvas>
+
+        <div id="js-index" class="Index">
+            <div class="Index__msgArea">
+                <div class="Index__msg -win">GAME CLEAR</div>
+                <div class="Index__msg -lose">GAME OVER</div>
+            </div>
+            <div class="Index__btnArea -center">
+                <button id="js-start-btn" class="Index__btn -start">START</button>
+                <button id="js-reset-btn" class="Index__btn -reset">RESET</button>
+            </div>
+            <div class="Index__btnArea -topRight">
+                <button id="js-stop-btn"  class="Index__btn -stop">STOP</button>
+            </div>
+        </div>
+
+        <script src="./script/app.min.js"></script>
+    </body> 
+</html> 
+
