@@ -1,0 +1,90 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.index {
+  width: 100%;
+}
+
+.index__header {
+  width: 100%;
+  height: 54px;
+  padding: 12px;
+}
+
+.index__main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 278px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1180px) {
+  .index__main {
+    width: 560px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1179px) {
+  .index__main {
+    width: 560px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .index__main {
+    width: 336px;
+  }
+}
+
+.index__work {
+  position: relative;
+  padding: 12px;
+  width: 112px;
+  height: 112px;
+}
+
+.index__link {
+  display: block;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.index__filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0;
+  z-index: 1;
+}
+
+.index__filter:hover {
+  opacity: .2;
+}
+
+.index__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+}
