@@ -16,13 +16,34 @@ body {
 .index__header {
   width: 100%;
   height: 54px;
+}
+
+.index__header h1 {
   padding: 12px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1180px) {
+  .index__header h1 {
+    width: 560px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1179px) {
+  .index__header h1 {
+    width: 560px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .index__header h1 {
+    width: 336px;
+  }
 }
 
 .index__main {
   display: flex;
   flex-wrap: wrap;
-  height: 278px;
   position: absolute;
   left: 50%;
   top: 50%;
