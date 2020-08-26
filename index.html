@@ -1,42 +1,137 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Works</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/works/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/works/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <div class="index">
+        <header class="index__header">
+            <h1 class="index__title">Works</h1>
+        </header>
+        <nav class="index__navi">
+            <input type="checkbox" id="checkbox" class="index__navi-switch" style="display: none">
+            <label for="checkbox" class="index__navi-button open">
+                <div class="index__navi-icon open"></div>
+            </label>
+            <label for="checkbox" class="index__navi-button close">
+                <div class="index__navi-icon close"></div>
+            </label>
+            <div class="index__navi-content">
+                <a href="#invader">Invader</a>
+                <a href="#zipper">Zipper</a>
+                <a href="#nothello">Nothello</a>
+            </div>
+        </nav>
+        <div id="invader" class="index__works">
+            <div class="index__description">
+                <div class="index__work-title">
+                    <h2>Invader</h2>
+                </div>
+                <div class="index__text">
+                    <p>HTML5 CSS3 JavaScript SCSS Canvas Webpack SVG Git</p>
+                    <p>
+                        有名なインベーダーゲームのオマージュ作品です。<br>  
+                        オブジェクト志向の理解を深める目的で制作を開始しました。<br>
+                        疎結合を目指すうちに自然とMVCモデルにたどり着き、独自のアイディアでアーキテクチャを実装しました。<br>
+                        また、モダンなフロントエンド技術を積極的に導入することでこれらの知識を得ることができました。
+                    </p>
+                </div>
+                <div class="index__button-area">
+                    <a href="https://y-2g.github.io/invader/" target="_blank" rel="noopener noreferrer" class="index__button">DEMO</a>
+                    <a href="https://github.com/Y-2G/invader" target="_blank" rel="noopener noreferrer" class="index__button">GitHub</a>
+                </div>
+            </div>
+            <!-- 804pxまで -->
+            <div class="index__overlay"></div>
+            <video class="invader-video" src="img/invader.mp4" muted autoplay loop></video>
+            <img src="img/invader.jpg" alt="invader"></img>
+        </div>
 
-        <main class="index__main">
+        <div id="zipper" class="index__works">
+            <div class="index__description">
+                <div class="index__work-title">
+                    <h2>Zipper</h2>
+                </div>
+                <div class="index__text">
+                    <p>HTML5 CSS3 JavaScript Git</p>
+                    <p>
+                        ジッパーをWebに転用できないかという思いつきから生まれた作品です。
+                        背景に画像や動画を設置するといった使い道がありそうです。<br>
+                        特に工夫した点は、ハンドル部分の実装です。<br>
+                        画像等は一切使用せずHTMLとCSSの組み合わせのみで、よりリアルに見えるようにこだわりました。<br>
+                    </p>
+                </div>
+                <div class="index__button-area">
+                    <a href="https://codepen.io/Y-2G/details/wvMwgbd" target="_blank" rel="noopener noreferrer"class="index__button">DEMO</a>
+                    <a href="https://github.com/Y-2G/zipper" target="_blank" rel="noopener noreferrer" class="index__button">GitHub</a>
+                </div>
+            </div>
+            <!-- 804pxまで -->
+            <div class="index__overlay"></div>
+            <video src="img/zipper.mp4" muted autoplay loop></video>
+            <img src="img/zipper.jpg" alt="zipper"></img>
+        </div>
 
-            <header class="index__header">
-                <h1>Works</h1>
-            </header>
-
-            <article class="index__work">
-                <a class="index__link" href="/works/works/invader/">
-                    <div class="index__filter"></div>
-                    <img class="index__image" src="/works/img/invader.jpg" alt="invader">
-                </a>
-            </article>
-            
-            <article class="index__work">
-                <a class="index__link" href="/works/works/zipper/">
-                    <div class="index__filter"></div>
-                    <img class="index__image" src="/works/img/zipper.jpg" alt="zipper">
-                </a>
-            </article>
-
-            <article class="index__work">
-                <a class="index__link" href="http://18.178.72.41/work/nothello/">
-                    <div class="index__filter"></div>
-                    <img class="index__image" src="/works/img/nothello.jpg" alt="nothello">
-                </a>
-            </article>
-
-        </main>
+        <div id="nothello" class="index__works">
+            <div class="index__description">
+                <div class="index__work-title">
+                    <h2>Nothello</h2>
+                </div>
+                <div class="index__text">
+                    <p>HTML5 CSS3 React.js SCSS Gulp.js Webpack AWS nignx WebSocket Node.js Git</p>
+                    <p>
+                        Reactで作成したオセロゲームです。<br>
+                        Reactの学習が目的でしたが、サーバーサイドの技術も積極的に導入しました。<br>
+                        使用した技術の多くが初めて扱うものばかりでキャッチアップは困難でしたが、
+                        フロントエンド、バックエンド技術ともに理解を深めることができました。<br>
+                    </p>
+                </div>
+                <div class="index__button-area">
+                    <a href="http://18.178.72.41/work/nothello/" target="_blank" rel="noopener noreferrer" class="index__button">DEMO</a>
+                    <a href="https://github.com/Y-2G/othello" target="_blank" rel="noopener noreferrer" class="index__button">GitHub</a>
+                </div>
+            </div>
+            <!-- 804pxまで -->
+            <div class="index__overlay"></div>
+            <video src="img/nothello.mp4" muted autoplay loop></video>
+            <img src="img/nothello.jpg" alt="nothello"></img>
+        </div>
     </div>
+
+    <script>
+        const works = document.querySelectorAll('.index__works');
+        window.addEventListener('load', () => init());
+        window.addEventListener('scroll', () => controllDescriptionView());
+
+        function init() {
+            controllDescriptionView();
+        }
+
+        function controllDescriptionView() {
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const scrollYBasis = scrollTop + (windowHeight / 2);
+
+            for(const w of works) {
+                const rect = w.getBoundingClientRect();
+                const workTop = window.pageYOffset + rect.top;
+                const workbuttom = workTop + w.clientHeight;
+            
+                const description = w.querySelector('.index__description');
+                const video = w.querySelector('video');
+                if(scrollYBasis > workTop && scrollYBasis < workbuttom) {
+                    description.classList.add('show');
+                    video.play()
+                } else {
+                    description.classList.remove('show');
+                    video.pause()
+                }
+            }
+        }
+    </script>
 </body>
 </html>
