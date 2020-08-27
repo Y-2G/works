@@ -47,7 +47,11 @@
             </div>
             <!-- 804pxまで -->
             <div class="index__overlay"></div>
-            <video class="invader-video" src="img/invader.mp4" muted autoplay loop></video>
+            <video
+                src="img/invader.mp4"
+                poster="img/invader.jpg"
+                muted autoplay loop>
+            </video>
             <img src="img/invader.jpg" alt="invader"></img>
         </div>
 
@@ -72,7 +76,11 @@
             </div>
             <!-- 804pxまで -->
             <div class="index__overlay"></div>
-            <video src="img/zipper.mp4" muted autoplay loop></video>
+            <video
+                src="img/zipper.mp4"
+                poster="img/zipper.jpg"
+                muted autoplay loop>
+            </video>
             <img src="img/zipper.jpg" alt="zipper"></img>
         </div>
 
@@ -97,7 +105,11 @@
             </div>
             <!-- 804pxまで -->
             <div class="index__overlay"></div>
-            <video src="img/nothello.mp4" muted autoplay loop></video>
+            <video
+                src="img/nothello.mp4"
+                poster="img/nothello.jpg"
+                muted autoplay loop>
+            </video>
             <img src="img/nothello.jpg" alt="nothello"></img>
         </div>
     </div>
@@ -123,12 +135,13 @@
             
                 const description = w.querySelector('.index__description');
                 const video = w.querySelector('video');
+                
                 if(scrollYBasis > workTop && scrollYBasis < workbuttom) {
                     description.classList.add('show');
-                    video.play()
+                    if(video) video.play();
                 } else {
                     description.classList.remove('show');
-                    video.pause()
+                    if(video) video.pause();
                 }
             }
         }
